@@ -1,72 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Exemplo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #007BFF;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robson Hertz - Desenvolvedor de Software</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 50px;
+      background-color: #111;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .photo-container {
+      margin: 30px auto;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fff;
+    }
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    iframe {
+      width: 80%;
+      height: 400px;
+      border: none;
+      margin-top: 20px;
+    }
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .skills-container div {
+      width: 200px;
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .skills-container h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à Aula de HTML</h1>
-    </header>
-    <main>
-        <h2>O que é HTML?</h2>
-        <p>HTML significa <strong>HyperText Markup Language</strong>. É a linguagem padrão para criar páginas web.</p>
 
-        <h3>Estrutura Básica de um Documento HTML</h3>
-        <ul>
-            <li><strong>&lt;!DOCTYPE html&gt;</strong>: Declara o tipo de documento.</li>
-            <li><strong>&lt;html&gt;</strong>: Elemento raiz que envolve todo o conteúdo.</li>
-            <li><strong>&lt;head&gt;</strong>: Contém metadados como título e links de estilo.</li>
-            <li><strong>&lt;body&gt;</strong>: Contém o conteúdo visível da página.</li>
-        </ul>
+  <header>
+    <h1>Robson Hertz</h1>
+    <p>Desenvolvedor de Software | APIs & Mentoria em Linux</p>
+  </header>
 
-        <h3>Exemplo de Código</h3>
-        <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Exemplo&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Olá Mundo!&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-        </pre>
-    </main>
-    <footer>
-        <p>&copy; 2025 Aula de HTML. Todos os direitos reservados.</p>
-    </footer>
+  <section class="section">
+    <div class="photo-container">
+      <img src="sua-foto.jpg" alt="Foto de Robson Hertz">
+    </div>
+    <h2>Olá, seja bem-vindo ao meu site!</h2>
+    <p>Sou Robson Hertz, desenvolvedor de software com experiência em APIs e em mentoria sobre administração de Linux.</p>
+  </section>
+
+  <section class="section">
+    <h2>Vídeo</h2>
+    <iframe src="https://www.youtube.com/embed/seu-video-aqui" title="Vídeo de Apresentação"></iframe>
+  </section>
+
+  <section class="section">
+    <h2>Minhas Competências</h2>
+    <div class="skills-container">
+      <div>
+        <h3>APIs</h3>
+        <p>Desenvolvimento e integração de APIs para sistemas e aplicações.</p>
+      </div>
+      <div>
+        <h3>Mentoria em Linux</h3>
+        <p>Ofereço mentoria para profissionais que desejam aprender e se aprimorar na administração de sistemas Linux.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Robson Hertz - Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>
